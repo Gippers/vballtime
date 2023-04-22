@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "vballtime"
+  site-url: "https://Gippers.github.io/vballtime"
+  description: "Volleyball Game day time analysis"
+  repo-branch: main
+  repo-url: "https://github.com/Gippers/vballtime"
