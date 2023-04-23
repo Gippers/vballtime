@@ -28,7 +28,9 @@ class VballGame:
         self.time = 0
         # TODO turn this into generator?
         for i in range(self.n_sets):
-            self.sets.append(VballSet(self.div))
+            # Fifth set has less points
+            if i == 4: self.sets.append(VballSet(self.div, set_5 = True))
+            else: self.sets.append(VballSet(self.div))
             self.time += self.sets[i].get_time()
             
                
