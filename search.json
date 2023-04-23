@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "vball_set.html",
+    "href": "vball_set.html",
+    "title": "set",
+    "section": "",
+    "text": "Based on this study assume that the length of a point and break between a set are normally distributed and equal to: - TODO should change to be left skewed\nLet \\(P_M\\) be the point legth in a mens volleyball game \\[P_M \\sim N(4.99, 4.35^2)\\] Let \\(R_M\\) be the ress length in a mens volleyball games, \\[R_M \\sim N(29.02, 19.44^2)\\]\nLet \\(P_W\\) be the point legth in a womens volleyball game \\[P_W \\sim N(6.88, 5.92^2)\\] Let \\(R_W\\) be the ress length in a womens volleyball games, \\[R_W \\sim N(29.92, 18.21^2)\\]\nAssume elite volleyball point times are comparable to ACT club times\nAssume that there are 3 timeouts per set\nAssume that the points in one set are independent of the points in the next sets\nAssume one team always gets 25 (doesn’t go above) - Therefore the other team can’t exceed 23\nLet \\(P_n\\) be the number of sets the losing team scores in a set. Assume that the number of points for the second team follows a binomial distribution such that \\[P_n \\sim Bin(23, 0.85)\\]\nlet \\(P_5\\) be the number of points scored by the losing team in the 5th set such that \\[P_5 \\sim Bin(13, 0.7)\\]\nsource"
+  },
+  {
+    "objectID": "vball_set.html#tests",
+    "href": "vball_set.html#tests",
+    "title": "set",
+    "section": "Tests",
+    "text": "Tests\nInclude some examples and unit tests below\n\npw_set = VballSet(\"PW\")\n\n\npw_5th_set = VballSet(\"PW\", set_5 = True)\n\n\npw_5th_set.points\n\n24"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "vballtime",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "vballtime",
+    "section": "Install",
+    "text": "Install\npip install vballtime"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "vballtime",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  },
+  {
+    "objectID": "gameday.html",
+    "href": "gameday.html",
+    "title": "Gameday",
+    "section": "",
+    "text": "An example timetable for a gameday of volleyball looks like the below:\nsource"
+  },
+  {
+    "objectID": "gameday.html#testing",
+    "href": "gameday.html#testing",
+    "title": "Gameday",
+    "section": "Testing",
+    "text": "Testing"
+  },
+  {
+    "objectID": "gameday.html#tests",
+    "href": "gameday.html#tests",
+    "title": "Gameday",
+    "section": "Tests",
+    "text": "Tests\nInclude some examples and unit tests below\n\npw_game = VballGame(\"PW\")\n\n\npw_game.get_time()\n\n8392.580571350423\n\n\n\nstr(pw_game)\n\n'PW game with 5 sets that takes 139 minutes'"
+  },
+  {
+    "objectID": "vball_game.html",
+    "href": "vball_game.html",
+    "title": "Vball Game",
+    "section": "",
+    "text": "Assumptions - let \\(S_n\\) be the number of sets - assume number of sets is uniformly distrubted such that for \\(S_n\\): \\[S_n \\sim U(3, 5)\\] - assume that the number of sets is indepent of the score of previous sets\nsource"
+  },
+  {
+    "objectID": "vball_game.html#testing",
+    "href": "vball_game.html#testing",
+    "title": "Vball Game",
+    "section": "Testing",
+    "text": "Testing"
+  },
+  {
+    "objectID": "vball_game.html#tests",
+    "href": "vball_game.html#tests",
+    "title": "Vball Game",
+    "section": "Tests",
+    "text": "Tests\nInclude some examples and unit tests below\n\npw_game = VballGame(\"PW\")\n\n\npw_game.get_time()\n\n8392.580571350423\n\n\n\nstr(pw_game)\n\n'PW game with 5 sets that takes 139 minutes'"
+  }
+]
