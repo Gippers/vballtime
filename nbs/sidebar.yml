@@ -1,0 +1,7 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 02_vball_set.ipynb
+      - 03_vball_game.ipynb
+      - 04_gameday.ipynb
